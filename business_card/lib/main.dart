@@ -51,41 +51,57 @@ class MyApp extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Container(
+              Card(
+                color: Colors.white30,
+
+                elevation: 10.0,
                 margin: EdgeInsets.only(left: 20, right: 20),
-                decoration: BoxDecoration(
-                    color: Colors.white,
+                shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(40)),
-                padding: EdgeInsets.all(15),
-                child: Row(
-                  // mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Icon(Icons.call),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Text("0771234567")
-                  ],
+                // decoration: BoxDecoration(
+                //     color: Colors.white,
+                //     borderRadius: BorderRadius.circular(40)),
+                // padding: EdgeInsets.all(15),
+                child: Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Row(
+                    // mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Icon(Icons.call),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text("0771234567")
+                    ],
+                  ),
                 ),
               ),
               SizedBox(
                 height: 10,
               ),
-              Container(
-                decoration: BoxDecoration(
-                    color: Colors.white,
+              Card(
+                color: Colors.white30,
+                shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(40)),
+                elevation: 10.0,
+
+                // decoration: BoxDecoration(
+                // color: Colors.white,
+                // borderRadius: BorderRadius.circular(40)),
                 margin: EdgeInsets.only(left: 20, right: 20),
-                padding: EdgeInsets.all(15),
-                child: Row(
-                  // mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Icon(Icons.email),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Text("dulaj@gmail.com")
-                  ],
+                // padding: EdgeInsets.all(15),
+                child: Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Row(
+                    // mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Icon(Icons.email),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text("dulaj@gmail.com")
+                    ],
+                  ),
                 ),
               )
             ],
